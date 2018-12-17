@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,7 @@ namespace WindowsFormsApp1
 
     public partial class Form1 : Form
     {
+        SoundPlayer Pl = new SoundPlayer("Pls.wav");
         double scorePoints = 0;
         int highPoints = 0;
         bool jump;
@@ -160,6 +162,10 @@ namespace WindowsFormsApp1
             if(e.KeyCode == Keys.Down && !jump && onGameTimer.Enabled && !crawling)
             {
                 crawling = true;
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                ResetGame();
             }
         }
 
@@ -321,6 +327,14 @@ namespace WindowsFormsApp1
             obstacleSpeed = 8;
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Pl.Play();
+        }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Pl.Stop();
+        }
     }
 }

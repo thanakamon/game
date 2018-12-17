@@ -97,5 +97,17 @@
   <ItemGroup>
     <None Include="Resources\cactus.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mario-background-mario-background-mario-background-gif-mario-background-for-scratch-mario-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1434038877-jurassicwo-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Pls.wav" />
+    <None Include="Resources\giphy.gif" />
+    <None Include="Resources\ดาวน์โหลด.png" />
+    <None Include="Resources\9500_16102611572698.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

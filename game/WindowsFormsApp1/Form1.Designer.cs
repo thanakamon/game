@@ -38,9 +38,13 @@
             this.highscore = new System.Windows.Forms.Label();
             this.points = new System.Windows.Forms.Label();
             this.score = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cactus2 = new System.Windows.Forms.PictureBox();
             this.dino = new System.Windows.Forms.PictureBox();
             this.screen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cactus2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dino)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +63,9 @@
             // screen
             // 
             this.screen.AccessibleName = " ";
-            this.screen.BackColor = System.Drawing.Color.White;
+            this.screen.BackColor = System.Drawing.Color.PowderBlue;
+            this.screen.Controls.Add(this.pictureBox2);
+            this.screen.Controls.Add(this.pictureBox1);
             this.screen.Controls.Add(this.gmover2);
             this.screen.Controls.Add(this.gmover1);
             this.screen.Controls.Add(this.highpoints);
@@ -138,6 +144,28 @@
             this.score.TabIndex = 3;
             this.score.Text = "Score:";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.ดาวน์โหลด;
+            this.pictureBox2.Location = new System.Drawing.Point(1012, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources._9500_16102611572698;
+            this.pictureBox1.Location = new System.Drawing.Point(966, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // cactus2
             // 
             this.cactus2.BackColor = System.Drawing.Color.Green;
@@ -149,10 +177,11 @@
             // 
             // dino
             // 
-            this.dino.Image = global::WindowsFormsApp1.Properties.Resources.dino;
-            this.dino.Location = new System.Drawing.Point(50, 151);
+            this.dino.Image = global::WindowsFormsApp1.Properties.Resources.giphy;
+            this.dino.Location = new System.Drawing.Point(33, 151);
             this.dino.Name = "dino";
-            this.dino.Size = new System.Drawing.Size(45, 60);
+            this.dino.Size = new System.Drawing.Size(110, 63);
+            this.dino.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.dino.TabIndex = 0;
             this.dino.TabStop = false;
             // 
@@ -171,6 +200,8 @@
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.screen.ResumeLayout(false);
             this.screen.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cactus2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dino)).EndInit();
             this.ResumeLayout(false);
@@ -192,6 +223,8 @@
         private System.Windows.Forms.Label highscore;
         private System.Windows.Forms.Label gmover2;
         private System.Windows.Forms.Label gmover1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
